@@ -1,0 +1,25 @@
+<div class="container" style="page-break-inside: avoid;">
+  <div class="card">
+    <div class="card-header">
+      PROJECTS
+    </div>
+    <div class="card-body">
+      <table class="table table-borderless" *ngFor="let record of projectsData.records">
+        <tr>
+          <td>
+            <b>{{record.projectName}}</b>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <span class="badge badge-pill badge-secondary" style="margin-right: 2px" *ngFor="let technology of record.technologies ">{{technology}}</span>
+          </td>
+        </tr>
+        <tr>
+          <td>{{record.projectDescription}}</td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</div>
+<br>
