@@ -25,8 +25,8 @@ export class AppComponent {
       isEnabled: true,
       records: [
         {
-          positions: [ "Lorem", "Lorem ipsum", "Lorem", "Lorem","Lorem","Lorem" ],
-          locations: ["Lorem", "Lorem", "Lorem", "Lorem","Lorem","Lorem","Lorem","Lorem"]
+          positions: ["Lorem", "Lorem ipsum", "Lorem", "Lorem", "Lorem", "Lorem"],
+          locations: ["Lorem", "Lorem", "Lorem", "Lorem", "Lorem", "Lorem", "Lorem", "Lorem"]
         },
       ]
     },
@@ -164,10 +164,17 @@ export class AppComponent {
     },
     extraData: {
       isEnabled: true,
-      extra1: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-      extra2: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-      extra3: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-      extra4: "Lorem ipsum dolor sit amet,  ut labore et dolore magna aliqua."
+      records: [
+        {
+          extraActivities: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
+        },
+        {
+          extraActivities: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
+        },
+        {
+          extraActivities: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua."
+        }
+      ]
     },
     nonRelatedData: {
       isEnabled: true,
