@@ -25,8 +25,8 @@ export class AppComponent {
       isEnabled: true,
       records: [
         {
-          positions: [ "Lorem", "Lorem ipsum", "Lorem", "Lorem","Lorem","Lorem" ],
-          locations: ["Lorem", "Lorem", "Lorem", "Lorem","Lorem","Lorem","Lorem","Lorem"]
+          positions: ["Lorem", "Lorem ipsum", "Lorem", "Lorem", "Lorem", "Lorem"],
+          locations: ["Lorem", "Lorem", "Lorem", "Lorem", "Lorem", "Lorem", "Lorem", "Lorem"]
         },
       ]
     },
@@ -192,28 +192,103 @@ export class AppComponent {
       isEnabled: true,
       records: [
         {
-          technology: "Lorem ",
-          startDate: "12/12/1234",
-          endDate: "12/12/1235",
-          months: "11"
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2007/01/01",
+              "end": new Date()
+            }
+          ]
         },
         {
-          technology: "Lorem ",
-          startDate: "12/12/1234",
-          endDate: "12/12/1235",
-          months: "05"
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2008/01/01",
+              "end": new Date()
+            }
+          ]
         },
         {
-          technology: "Lorem ",
-          startDate: "12/12/1234",
-          endDate: "12/12/1235",
-          months: "6"
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2008/01/01",
+              "end": new Date()
+            }
+          ]
         },
         {
-          technology: "Lorem ",
-          startDate: "12/12/1234",
-          endDate: "12/12/1235",
-          months: "11"
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2013/01/01",
+              "end": new Date()
+            }
+          ]
+        },
+        {
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2013/01/01",
+              "end": new Date()
+            }
+          ]
+        },
+        {
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2015/10/01",
+              "end": new Date()
+            }
+          ]
+        },
+        {
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2015/10/01",
+              "end": new Date()
+            }
+          ]
+        },
+        {
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2015/10/01",
+              "end": new Date()
+            }
+          ]
+        },
+        {
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2016/11/01",
+              "end": new Date()
+            }
+          ]
+        },
+        {
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2017/04/01",
+              "end": new Date()
+            }
+          ]
+        },
+        {
+          "category": "Lorem",
+          "segments": [
+            {
+              "start": "2017/10/01",
+              "end": new Date()
+            }
+          ]
         }
       ]
     }

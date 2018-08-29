@@ -1,27 +1,10 @@
 <div class="container" style="page-break-inside: avoid;">
   <div class="card">
     <div class="card-header">
-      TECHNOLOGY HISTORY
+      TECHNOLOGY USAGE IN MONTHS
     </div>
     <div class="card-body">
-      <table class="table table-bordered table-sm">
-        <thead>
-          <tr align="center">
-            <th scope="col">Technology</th>
-            <th scope="col">Start Date</th>
-            <th scope="col">End Date</th>
-            <th scope="col">Duration (Months)</th>
-          </tr>
-        </thead>
-        <tbody *ngFor="let record of techHistoryData.records">
-          <tr align="center">
-            <td>{{record.technology}}</td>
-            <td>{{record.startDate}}</td>
-            <td>{{record.endDate}}</td>
-            <td>{{record.months}}</td>
-          </tr>
-        </tbody>
-      </table>
+      <div id="chartdiv"></div>
     </div>
   </div>
 </div>
