@@ -1,0 +1,25 @@
+<div class="container" style="page-break-inside: avoid;">
+  <div class="card">
+    <div class="card-header">
+      RECOMMENDATIONS
+    </div>
+    <div class="card-body">
+      <div class="row" *ngFor="let record of recommendationsData.records; let i = index">
+        <div class="col-4">
+          <p>
+            <b>{{record.name}}</b>
+            <br/> {{record.designation}}
+            <br/>{{record.organisation}}
+            <br/>{{record.date}}</p>
+        </div>
+        <div class="col-8">
+          <p style="text-align: justify">{{record.recommendation}}</p>
+        </div>
+        <div *ngIf="(recommendationsData.records.length - 1) !== i" class="col-12">
+          <hr/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<br>
