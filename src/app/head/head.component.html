@@ -1,6 +1,6 @@
 
 <div class="container" style="page-break-inside: avoid;">
-  <img src="assets/img/user.png" alt="Lorem Ipsom" class="float-left img-profile rounded-circle" width="180px" height="180px">
+  <img *ngIf="headData.isImageEnabled" src="assets/img/user.png" alt="Lorem Ipsom" class="float-left img-profile rounded-circle" width="180px" height="180px">
   <div class="row justify-content-md-center">
     <div class="col-sm-5">
       <h2 class="name">

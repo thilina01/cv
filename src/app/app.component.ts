@@ -11,6 +11,7 @@ export class AppComponent {
   data = {
     headData: {
       isEnabled: true,
+      isImageEnabled: true,
       name: "Lorem Ipsum Dolor Lorem",
       title: ["Lorem", "Lorem", "Lorem", "Lorem"],
       email: "loren@ipsum.com",
