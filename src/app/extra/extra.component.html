@@ -4,18 +4,9 @@
       EXTRA CURRICULAR ACTIVITIES
     </div>
     <div class="card-body">
-      <table class="table table-borderless">
+      <table class="table table-borderless" *ngFor="let record of extraData.records">
         <tr>
-          <td>{{extraData.extra1}}</td>
-        </tr>
-        <tr>
-          <td>{{extraData.extra2}}</td>
-        </tr>
-        <tr>
-          <td>{{extraData.extra3}}</td>
-        </tr>
-        <tr>
-          <td>{{extraData.extra4}}</td>
+          <td>{{record.extraActivities}}</td>
         </tr>
       </table>
     </div>
