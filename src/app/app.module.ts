@@ -14,6 +14,7 @@ import { CertificationComponent } from './certification/certification.component'
 import { TechHistoryComponent } from './tech-history/tech-history.component';
 import { PublicationComponent } from './publication/publication.component';
 import { InterestedComponent } from './interested/interested.component';
+import { RecommendationsComponent } from './recommendations/recommendations.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { InterestedComponent } from './interested/interested.component';
     CertificationComponent,
     TechHistoryComponent,
     PublicationComponent,
-    InterestedComponent
+    InterestedComponent,
+    RecommendationsComponent
   ],
   imports: [
     BrowserModule
