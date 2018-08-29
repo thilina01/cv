@@ -1,76 +1,35 @@
-
-<div class="container" style="page-break-inside: avoid;">
-  <img *ngIf="headData.isImageEnabled" src="assets/img/user.png" alt="Lorem Ipsom" class="float-left img-profile rounded-circle" width="180px" height="180px">
-  <div class="row justify-content-md-center">
-    <div class="col-sm-5">
+<div class="container" style="page-break-inside: avoid; margin-top: 50px">
+  <div class="row">
+    <div *ngIf="headData.isImageEnabled" class="col-4">
+      <img src="assets/img/user.png" alt="Lorem Ipsom" class="float-left img-profile rounded-circle" width="180px" height="180px">
+    </div>
+    <div class="col-8">
       <h2 class="name">
         <b>{{headData.name}}</b>
       </h2>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-5">
       <h6 class="title-center">{{headData.title}}</h6>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-2">
-      Email:
-    </div>
-    <div class="col-sm-4">
-      <a href="">
-        <i>{{headData.email}}</i>
-      </a>
-      <br>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-2">
-      Github:
-    </div>
-    <div class="col-sm-4">
-      <a href="">
-        <i>{{headData.github}}</i>
-      </a>
-      <br>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-2">
-      Twitter:
-    </div>
-    <div class="col-sm-4">
-      <a href="">
-        <i>{{headData.twitter}}</i>
-      </a>
-      <br>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-2">
-      LinkedIn:
-    </div>
-    <div class="col-sm-4">
-      <a href="">{{headData. linkedIn}}</a>
-      <br>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-2">
-      You Tube:
-    </div>
-    <div class="col-sm-4">
-      <a href="">{{headData.youtube}}</a>
-      <br>
-    </div>
-  </div>
-  <div class="row justify-content-md-center">
-    <div class="col-sm-2">
-      Mobile No:
-    </div>
-    <div class="col-sm-4">
-      {{headData.mobileNo}}
-      <br>
+      <div class="row">
+        <div class="col-6"> LinkedIn:
+          <a href="">{{headData. linkedIn}}</a>
+          <br/> Email:
+          <a href="">
+            <i>{{headData.email}}</i>
+          </a>
+          <br/> Mobile: {{headData.mobileNo}}
+        </div>
+        <div class="col-6">
+          Github:
+          <a href="">
+            <i>{{headData.github}}</i>
+          </a>
+          <br/> Twitter:
+          <a href="">
+            <i>{{headData.twitter}}</i>
+          </a>
+          <br/> You Tube:
+          <a href="">{{headData.youtube}}</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
