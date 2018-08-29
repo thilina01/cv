@@ -164,10 +164,17 @@ export class AppComponent {
     },
     extraData: {
       isEnabled: true,
-      extra1: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-      extra2: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-      extra3: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
-      extra4: "Lorem ipsum dolor sit amet,  ut labore et dolore magna aliqua."
+      records: [
+        {
+          extraActivities: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
+        },
+        {
+          extraActivities: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua.",
+        },
+        {
+          extraActivities: "Lorem ipsum dolor sit amet, ut labore et dolore magna aliqua."
+        }
+      ]
     },
     nonRelatedData: {
       isEnabled: true,
