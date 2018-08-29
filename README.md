@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/thilina01/cv.svg?branch=master)](https://travis-ci.org/thilina01/cv)
+[![Build Status](https://travis-ci.com/thilina01/cv.svg?branch=master)](https://travis-ci.com/thilina01/cv)
 
 # CV
 
