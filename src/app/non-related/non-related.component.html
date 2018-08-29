@@ -1,0 +1,19 @@
+<div class="container" style="page-break-inside: avoid;">
+  <div class="card">
+    <div class="card-header">
+      NON-RELATED REFERANCE
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-6" *ngFor="let detail of nonRelatedData.details">
+          {{detail.name}}
+          <br>{{detail.title}}
+          <br>{{detail.companyName}}
+          <br>TelephoneNo: {{detail.telephoneNo}}
+          <br>Email:
+          <i><a href="">{{detail.email}}</a></i>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
