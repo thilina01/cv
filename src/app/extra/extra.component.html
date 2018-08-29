@@ -5,17 +5,8 @@
     </div>
     <div class="card-body">
       <table class="table table-borderless">
-        <tr>
-          <td>{{extraData.extra1}}</td>
-        </tr>
-        <tr>
-          <td>{{extraData.extra2}}</td>
-        </tr>
-        <tr>
-          <td>{{extraData.extra3}}</td>
-        </tr>
-        <tr>
-          <td>{{extraData.extra4}}</td>
+        <tr *ngFor="let record of extraData.records">
+          <td>{{record.extraActivities}}</td>
         </tr>
       </table>
     </div>
