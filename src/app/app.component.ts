@@ -191,6 +191,19 @@ export class AppComponent {
         }
       ]
     },
+    externalResourcesData: {
+      isEnabled: true,
+      records: [
+        {
+          name: "Lorem ipsum dolor",
+          link: "http://lorem.com"
+        },
+        {
+          name: "Lorem ipsum dolor",
+          link: "http://lorem.com"
+        }
+      ]
+    },
     extraData: {
       isEnabled: true,
       records: [

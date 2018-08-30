@@ -15,6 +15,7 @@ import { TechHistoryComponent } from './tech-history/tech-history.component';
 import { PublicationComponent } from './publication/publication.component';
 import { InterestedComponent } from './interested/interested.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
+import { ExternalResourcesComponent } from './external-resources/external-resources.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { RecommendationsComponent } from './recommendations/recommendations.comp
     TechHistoryComponent,
     PublicationComponent,
     InterestedComponent,
-    RecommendationsComponent
+    RecommendationsComponent,
+    ExternalResourcesComponent
   ],
   imports: [
     BrowserModule

@@ -4,17 +4,11 @@
       EDUCATION
     </div>
     <div class="card-body">
-      <table class="table table-borderless" *ngFor="let record of educationData.records">
-        <tr>
-            <td>{{record.award}}  -   {{record.institute}}</td>
-        </tr>
-        <tr>
-          <td>{{record.programme}}</td>
-        </tr>
-        <tr>
-          <td><i>{{record.startDate}} - {{record.endDate}}</i></td>
-        </tr>
-      </table>
+      <p *ngFor="let record of educationData.records">{{record.award}} - {{record.institute}}
+        <br>{{record.programme}}
+        <br>
+        <i>{{record.startDate}} - {{record.endDate}}</i>
+      </p>
     </div>
   </div>
 </div>

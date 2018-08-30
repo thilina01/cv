@@ -1,12 +1,10 @@
-
-
 <div class="container" style="page-break-inside: avoid;">
-    <div class="card">
-      <div class="card-header">
-        EXPERIENCE
-      </div>
-      <div class="card-body">
-        <table class="table table-borderless" *ngFor="let record of experienceData.records">
+  <div class="card">
+    <div class="card-header">
+      EXPERIENCE
+    </div>
+    <div class="card-body">
+      <table class="table table-borderless" *ngFor="let record of experienceData.records">
           <tr>
             <td>
               <b>{{record.organisation}}</b>
@@ -19,7 +17,7 @@
             <td  *ngFor="let position of record.positions">{{position.description}}</td>
           </tr>
         </table>
-      </div>
     </div>
   </div>
-  <br>
+</div>
+<br>

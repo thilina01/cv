@@ -1,10 +1,13 @@
 <div class="container" style="page-break-inside: avoid;">
   <div class="card">
     <div class="card-header">
-      EXTRA CURRICULAR ACTIVITIES
+      EXTERNAL RESOURCES
     </div>
     <div class="card-body">
-      <p *ngFor="let record of extraData.records">{{record.extraActivities}}</p>
+      <p *ngFor="let record of externalResourcesData.records">{{record.name}}
+        <br> Link:
+        <a href="">{{record.link}}</a>
+      </p>
     </div>
   </div>
 </div>
