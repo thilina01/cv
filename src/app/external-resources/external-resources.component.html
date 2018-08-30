@@ -1,0 +1,15 @@
+<div class="container" style="page-break-inside: avoid;">
+  <div class="card">
+    <div class="card-header">
+      EXTERNAL RESOURCES
+    </div>
+    <div class="card-body" *ngFor="let record of externalResourcesData.records">
+      Name: {{record.name}}
+      <br> Link:
+      <i>
+        <a href="">{{record.link}}</a>
+      </i>
+    </div>
+  </div>
+</div>
+<br>
