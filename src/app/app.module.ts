@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
@@ -16,6 +17,7 @@ import { PublicationComponent } from './publication/publication.component';
 import { InterestedComponent } from './interested/interested.component';
 import { RecommendationsComponent } from './recommendations/recommendations.component';
 import { ExternalResourcesComponent } from './external-resources/external-resources.component';
+import { DataService } from './data.service';
 
 @NgModule({
   declarations: [
@@ -36,9 +38,10 @@ import { ExternalResourcesComponent } from './external-resources/external-resour
     ExternalResourcesComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

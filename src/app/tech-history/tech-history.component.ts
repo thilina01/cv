@@ -54,11 +54,12 @@ export class TechHistoryComponent {
     for (let index = 0; index < this.techHistoryData.records.length; index++) {
       const element = this.techHistoryData.records[index];
       const segment = element.segments[0];
-      segment.color =  "#90caf9";
+      segment.color = "#90caf9";
+      segment.end = segment.end === "" ? new Date() : segment.end
       const startDate = new Date(segment.start);
       const endDate = new Date(segment.end);
       const numberOfMunths = endDate.getMonth() - startDate.getMonth() + (12 * (endDate.getFullYear() - startDate.getFullYear()));
-      element.category = element.category+" ("+numberOfMunths+")";      
+      element.category = element.category + " (" + numberOfMunths + ")";
     }
 
     this.chart.dataProvider = this.techHistoryData.records;
