@@ -11,7 +11,7 @@ export class AppComponent {
   data: any;
 
   constructor(private dataService: DataService) { }
-  
+
   ngOnInit() {
     this.getData();
   }
@@ -20,6 +20,11 @@ export class AppComponent {
     this.dataService.getData()
       .subscribe((data: any) => {
         this.data = data;
+      }, error => {
+        this.dataService.getDefaultData()
+          .subscribe((data: any) => {
+            this.data = data;
+          });
       });
   }
 }
