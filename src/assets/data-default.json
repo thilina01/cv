@@ -9,12 +9,31 @@
             "Lorem",
             "Lorem"
         ],
-        "email": "loren@ipsum.com",
-        "github": "lorem123",
-        "twitter": "@lorem",
-        "linkedIn": "Lorem Ipsum Dolor",
-        "youtube": "Lorem Ipsum Dolor",
-        "mobileNo": "0123456789"
+        "contactList":[{
+            "name": "Lorem",
+            "value": "Lorem",
+            "link": "http://lorem.com"
+        },{
+            "name": "Lorem",
+            "value": "Lorem",
+            "link": "http://lorem.com"
+        },{
+            "name": "Lorem",
+            "value": "Lorem",
+            "link": "http://lorem.com"
+        },{
+            "name": "Lorem",
+            "value": "Lorem",
+            "link": "http://lorem.com"
+        },{
+            "name": "Lorem",
+            "value": "Lorem",
+            "link": "http://lorem.com"
+        },{
+            "name": "Lorem",
+            "value": "Lorem",
+            "link": "http://lorem.com"
+        }]
     },
     "interestedData": {
         "isEnabled": true,
