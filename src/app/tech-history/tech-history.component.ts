@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, SimpleChanges } from '@angular/core';
 declare var AmCharts: any;
 
 @Component({
@@ -8,7 +8,9 @@ declare var AmCharts: any;
 })
 export class TechHistoryComponent {
   @Input() techHistoryData: any;
-  chart = AmCharts.makeChart("chartdiv", {
+  
+  chart: any;
+  chartConfig = {
     "type": "gantt",
     "marginLeft": 10,
     "period": "DD",
@@ -47,10 +49,18 @@ export class TechHistoryComponent {
     "export": {
       "enabled": true
     }
-  });
+  };
 
   ngOnInit() {
+    this.chart = AmCharts.makeChart("chartdiv", this.chartConfig);
+  }
 
+  ngAfterViewInit() {
+    this.updateChart();
+  }
+
+  updateChart() {
+    if (this.chart === undefined) return;
     for (let index = 0; index < this.techHistoryData.records.length; index++) {
       const element = this.techHistoryData.records[index];
       const segment = element.segments[0];
