@@ -9,31 +9,38 @@
             "Lorem",
             "Lorem"
         ],
-        "contactList":[{
-            "name": "Lorem",
-            "value": "Lorem",
-            "link": "http://lorem.com"
-        },{
-            "name": "Lorem",
-            "value": "Lorem",
-            "link": "http://lorem.com"
-        },{
-            "name": "Lorem",
-            "value": "Lorem",
-            "link": "http://lorem.com"
-        },{
-            "name": "Lorem",
-            "value": "Lorem",
-            "link": "http://lorem.com"
-        },{
-            "name": "Lorem",
-            "value": "Lorem",
-            "link": "http://lorem.com"
-        },{
-            "name": "Lorem",
-            "value": "Lorem",
-            "link": "http://lorem.com"
-        }]
+        "contactList": [
+            {
+                "name": "Lorem",
+                "value": "Lorem",
+                "link": "http://lorem.com"
+            },
+            {
+                "name": "Lorem",
+                "value": "Lorem",
+                "link": "http://lorem.com"
+            },
+            {
+                "name": "Lorem",
+                "value": "Lorem",
+                "link": "http://lorem.com"
+            },
+            {
+                "name": "Lorem",
+                "value": "Lorem",
+                "link": "http://lorem.com"
+            },
+            {
+                "name": "Lorem",
+                "value": "Lorem",
+                "link": "http://lorem.com"
+            },
+            {
+                "name": "Lorem",
+                "value": "Lorem",
+                "link": "http://lorem.com"
+            }
+        ]
     },
     "interestedData": {
         "isEnabled": true,
@@ -281,20 +288,17 @@
     },
     "nonRelatedData": {
         "isEnabled": true,
-        "details": [
+        "refereeList": [
             {
-                "name": "Lorem ipsum dolor",
-                "title": "Lorem ipsum dolor sit amet, ut labore et",
-                "companyName": "Lorem ipsum",
-                "telephoneNo": "0123456789",
-                "email": "lorem@ipsum.com"
-            },
-            {
-                "name": "Lorem ipsum dolor",
-                "title": "Lorem ipsum dolor sit amet, ut labore et",
-                "companyName": "Lorem ipsum",
-                "telephoneNo": "0123456789",
-                "email": "lorem@ipsum.com"
+                "name": "Lorem",
+                "designation": "Lorem",
+                "organization": "Lorem",
+                "contactList": [
+                    {
+                        "name": "Lorem",
+                        "value": "lorem@lorem.com"
+                    }
+                ]
             }
         ]
     },
