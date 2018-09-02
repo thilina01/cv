@@ -4,11 +4,21 @@
       INTERESTED POSITIONS AND LOCATIONS
     </div>
     <div class="card-body">
-      <p *ngFor="let record of interestedData.records">
-        <b>Positions: </b> {{record.positions}}
-        <br>
-        <b>Locations: </b> {{record.locations}}
-      </p>
+      <div class="row">
+        <div class="col">
+          <b>Positions : </b>
+          <span *ngFor="let position of interestedData.positionList; let i = index">
+            {{position.name}}
+            <span *ngIf="(interestedData.positionList.length - 1) !== i">,&nbsp;</span>
+          </span>
+          <br>
+          <b>Locations : </b>
+          <span *ngFor="let location of interestedData.locationList; let i = index">
+            {{location.name}}
+            <span *ngIf="(interestedData.locationList.length - 1) !== i">,&nbsp;</span>
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </div>
