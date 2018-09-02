@@ -8,7 +8,7 @@ declare var AmCharts: any;
 })
 export class TechHistoryComponent {
   @Input() techHistoryData: any;
-  
+
   chart: any;
   chartConfig = {
     "type": "gantt",
@@ -60,19 +60,28 @@ export class TechHistoryComponent {
   }
 
   updateChart() {
-    if (this.chart === undefined) return;
+    const data = [];
     for (let index = 0; index < this.techHistoryData.records.length; index++) {
-      const element = this.techHistoryData.records[index];
-      const segment = element.segments[0];
-      segment.color = "#90caf9";
-      segment.end = segment.end === "" ? new Date() : segment.end
-      const startDate = new Date(segment.start);
-      const endDate = new Date(segment.end);
+      const record = this.techHistoryData.records[index];
+      record.end = record.end === "" ? new Date() : record.end
+      const startDate = new Date(record.start);
+      const endDate = new Date(record.end);
       const numberOfMunths = endDate.getMonth() - startDate.getMonth() + (12 * (endDate.getFullYear() - startDate.getFullYear()));
-      element.category = element.category + " (" + numberOfMunths + ")";
-    }
+      record.category = record.category + " (" + numberOfMunths + ")";
 
-    this.chart.dataProvider = this.techHistoryData.records;
+      const element = {
+        "category": record.category,
+        "segments": [
+          {
+            "start": startDate,
+            "end": endDate,
+            "color": "#90caf9"
+          }
+        ]
+      };
+      data.push(element);
+    }
+    this.chart.dataProvider = data;
     this.chart.validateData();
   }
 }
