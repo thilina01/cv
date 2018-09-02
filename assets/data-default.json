@@ -37,26 +37,44 @@
     },
     "interestedData": {
         "isEnabled": true,
-        "records": [
+        "positionList": [
             {
-                "positions": [
-                    "Lorem",
-                    "Lorem ipsum",
-                    "Lorem",
-                    "Lorem",
-                    "Lorem",
-                    "Lorem"
-                ],
-                "locations": [
-                    "Lorem",
-                    "Lorem",
-                    "Lorem",
-                    "Lorem",
-                    "Lorem",
-                    "Lorem",
-                    "Lorem",
-                    "Lorem"
-                ]
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            }
+        ],
+        "locationList": [
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
+            },
+            {
+                "name": "Lorem"
             }
         ]
     },
