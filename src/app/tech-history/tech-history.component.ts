@@ -67,7 +67,9 @@ export class TechHistoryComponent {
       const startDate = new Date(record.start);
       const endDate = new Date(record.end);
       const numberOfMunths = endDate.getMonth() - startDate.getMonth() + (12 * (endDate.getFullYear() - startDate.getFullYear()));
-      record.category = record.category + " (" + numberOfMunths + ")";
+      const y = numberOfMunths / 12 | 0;
+      const m = numberOfMunths % 12;
+      record.category = record.category + " (" + (y > 0 ? y + "Y " : "") + m + "M)";
 
       const element = {
         "category": record.category,
