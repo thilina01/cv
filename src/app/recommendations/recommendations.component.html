@@ -5,14 +5,18 @@
     </div>
     <div class="card-body">
       <div class="row" *ngFor="let record of recommendationsData.records; let i = index">
-        <div class="col-4">
+        <div class="col-xs-12 col-sm-4">
           <p>
             <b>{{record.name}}</b>
             <br/> {{record.designation}}
             <br/>{{record.organisation}}
-            <br/>{{record.date}}</p>
+            <br/>{{record.date}}          
+            <span *ngFor="let contact of record.contactList">
+                <br>{{contact.name}} : {{contact.value}}
+              </span>
+          </p>
         </div>
-        <div class="col-8">
+        <div class="col-xs-12 col-sm-8">
           <p style="text-align: justify">{{record.recommendation}}</p>
         </div>
         <div *ngIf="(recommendationsData.records.length - 1) !== i" class="col-12">

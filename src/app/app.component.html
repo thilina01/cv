@@ -1,8 +1,8 @@
 <app-head *ngIf="data?.headData.isEnabled" [headData]="data?.headData"></app-head>
 <app-interested *ngIf="data?.interestedData.isEnabled" [interestedData]="data?.interestedData"></app-interested>
+<app-summary *ngIf="data?.summaryData.isEnabled" [summaryData]="data?.summaryData"></app-summary>
 <app-tech-history *ngIf="data?.techHistoryData.isEnabled" [techHistoryData]="data?.techHistoryData"></app-tech-history>
 <app-recommendations *ngIf="data?.recommendationsData.isEnabled" [recommendationsData]="data?.recommendationsData"></app-recommendations>
-<app-summary *ngIf="data?.summaryData.isEnabled" [summaryData]="data?.summaryData"></app-summary>
 <!-- <app-technologies></app-technologies> -->
 <app-projects *ngIf="data?.projectsData.isEnabled" [projectsData]="data?.projectsData"></app-projects>
 <app-experience *ngIf="data?.experienceData.isEnabled" [experienceData]="data?.experienceData"></app-experience>

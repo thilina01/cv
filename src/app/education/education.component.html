@@ -4,10 +4,9 @@
       EDUCATION
     </div>
     <div class="card-body">
-      <p *ngFor="let record of educationData.records">{{record.award}} - {{record.institute}}
+      <p *ngFor="let record of educationData.records">• {{record.award}} - {{record.institute}}
         <br>{{record.programme}}
-        <br>
-        <i>{{record.startDate}} - {{record.endDate}}</i>
+        <br> {{record.startDate}} - {{record.endDate}}
       </p>
     </div>
   </div>

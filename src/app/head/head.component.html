@@ -9,8 +9,8 @@
           <b>{{headData.name}}</b>
         </h2>
         <h6 class="title-center">
-          <span *ngFor="let suffix of headData.title">
-            {{suffix}},&nbsp;
+          <span *ngFor="let suffix of headData.title; let i = index">
+            {{suffix}}<span *ngIf="(headData.title.length - 1) !== i">,&nbsp;</span>
           </span>
         </h6>
         <hr>

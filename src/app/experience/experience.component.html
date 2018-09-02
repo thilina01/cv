@@ -4,19 +4,17 @@
       EXPERIENCE
     </div>
     <div class="card-body">
-      <table class="table table-borderless" *ngFor="let record of experienceData.records">
-          <tr>
-            <td>
-              <b>{{record.organisation}}</b>
-            </td>
-          </tr>
-          <tr>
-            <td  *ngFor="let position of record.positions">{{position.designation}} <i>{{position.startDate}} - {{position.endDate}}</i></td>
-          </tr>
-          <tr>
-            <td  *ngFor="let position of record.positions">{{position.description}}</td>
-          </tr>
-        </table>
+      <div class="row" *ngFor="let record of experienceData.records; let i = index">
+        <div class="col-12">
+          <b>{{record.organisation}}</b>
+        </div>
+        <div class="col-12 col-sm-6" *ngFor="let position of record.positions">
+          • {{position.designation}} <br/> {{position.startDate}} - {{position.endDate}}<br/> {{position.description}} <br/><br/>
+        </div>
+        <div *ngIf="(experienceData.records.length - 1) !== i" class="col-12">
+          <hr/>
+        </div>
+      </div>
     </div>
   </div>
 </div>

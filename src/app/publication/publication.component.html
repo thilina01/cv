@@ -4,10 +4,10 @@
       PUBLICATIONS
     </div>
     <div class="card-body">
-      <p *ngFor="let record of publicationData.records">{{record.title}}
+      <p *ngFor="let record of publicationData.records">• {{record.title}}
         <br>{{record.description}}
         <br>
-        <a href="http://lorem.com">{{record.link}}</a>
+        <a href="{{record.link}}">{{record.link}}</a>
       </p>
     </div>
   </div>

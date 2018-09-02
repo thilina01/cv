@@ -5,8 +5,8 @@
     </div>
     <div class="card-body">
       <p *ngFor="let record of externalResourcesData.records">{{record.name}}
-        <br> Link:
-        <a href="">{{record.link}}</a>
+        <br>
+        <a href="{{record.link}}" target="_blank">{{record.link}}</a>
       </p>
     </div>
   </div>
