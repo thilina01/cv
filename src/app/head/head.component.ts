@@ -10,7 +10,7 @@ export class HeadComponent {
 
   @Input() headData: any;
   imageDefaultUrl = "assets/img/user-default.png";
-  imageUrl = "assets/img/user.png";
+  imageUrl = "https://thilina01.com/api/cv/thilina01.png";
 
   constructor(private http: HttpClient) { }
 

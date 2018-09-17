@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 
 @Injectable()
 export class DataService {
-    dataUrl = 'assets/data.json';
+    dataUrl = 'https://thilina01.com/api/cv/thilina01.json';
     defaultDataUrl = 'assets/data-default.json';
 
     constructor(private http: HttpClient) { }
